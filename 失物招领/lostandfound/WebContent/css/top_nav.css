@@ -1,0 +1,47 @@
+/*top*/
+	*{ margin:0px;}
+	body{background-image:url(../img/bg.png);font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif; margin:0; padding:0;}
+/* 顶部(小导航和搜索)css样式*/
+	.top_all{ background-color: #FFF; height:140px;color: #666;overflow:hidden;}
+	/*小导航*/
+	.top_login{background-color:#eee; height:37px; }
+	.top_content{ margin:0 auto; width:1000px;font-size: 11pt; color: #000; line-height:37px;}
+	/*搜索+logo*/
+	.top_search{ height:103px; background-color:#FFF;  }
+	.logo{ width:250px;float:left; }
+	.search{ width:700px; height:103px; float:right;}
+	.search input ,.search button{border-radius:3px;}
+	.search input{ border: 2px solid red;
+            border-radius: 5px;
+            background: transparent;
+			width: 100%;
+            height: 42px;
+			margin-top:20px;
+            padding-left: 1px;}
+	.search button { background: red;
+            border:none;
+			margin-top:20px;
+            top: 3px;
+			right:0;
+			height: 42px;
+            width: 80px;
+            cursor: pointer;
+            position: absolute;}
+	.search form{ position: relative;width: 500px;margin: 0 auto;}
+	.search button:before {
+            content: "搜索";
+            font-size: 13px;
+            color: #F9F0DA;
+        }
+/*大导航 */
+	.nav{height:50px; background-color:#f9803a; margin-top:0;  }
+	.nav_content{ width:1000px; margin:0 auto;  height:50px;}
+	.nav_cotent ul{list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
+	.nav_content li{width:200px; height:50px; float:left;text-align:center;}
+	.nav_content li a{color:#FFF; line-height:50px; font-size:20px; text-decoration:none;display:block; }
+	.nav_content li:hover, li:active{background-color:#F90; cursor:pointer;}
+
+
+             

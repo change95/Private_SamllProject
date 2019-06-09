@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册页面-失物招领</title>
+<link href="css/top_nav.css" rel="stylesheet" type="text/css" /> 
+<link href="css/marquee.css" rel="stylesheet" type="text/css" /> 
+<script>
+	function showTopTime(){
+			var time = new Date();
+			var week=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			document.getElementById('top_time').innerHTML=time.getFullYear()+'年'+ time.getMonth()+'月'+ time.getDate()+'日 '+ week[time.getDay()];	
+			}
+setTimeout(showTopTime,1000);
+</script>
+</head>
+<body>
+<!--top导航-->
+<div class="top_nav">
+	<!--小导航-->
+	<div class="top_login">
+    	<div class="top_content">
+        	<form>
+  			您好 欢迎来到校园失物招领网 &nbsp;&nbsp; <span id="top_time"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="登陆" onclick="window.location.href='main.jsp'" style="color: #222;cursor: pointer;width: 51px;height: 24px;line-height: 24px; "/>
+            &nbsp;&nbsp;
+            <input type="button" value="注册" onclick="window.location.href='register.html'" style="color: #222;cursor: pointer;width: 51px;height: 24px;line-height: 24px;" />
+            </form>                                   
+		</div> 
+    </div>
+    <!--搜索+logo-->
+    <div class="top_search">
+    	 <div style=" width:1000px; margin:0 auto;height:103px; ">
+    	 <div class="logo"> <img src="img/logo.jpg" width="250px" height="90px" style=" margin-top:6px;"></div>
+               <div class="search">
+                <form>
+                    <input type="text" placeholder="请输入您要搜索的内容..." />
+                    <button type="submit" ></button>
+                </form>
+                <center><font color="#FF0000">热搜词</font><font style="color: #000;font-family: "Microsoft YaHei";font-size: 12px;">：手机、钱包、钥匙、身份证、ipad、杯子</font></center>
+              </div>
+         </div>                                                      
+    </div>
+</div>
+<!-- 导航栏  -->
+<div class="nav">
+	<div class="nav_content">
+    	<ul>
+        	<li style="background-color: #F90"><a href="main.jsp">首页</a></li>
+            <li><a href="lost.jsp">发布招领</a></li>
+            <li><a href="found.jsp">发布失物</a></li>
+        </ul>
+    </div>
+</div>	
+<!-- 注册内容 -->
+<div style=" height: 400px" >
+		<div style=" margin: 0 auto; height: 400px; width: 1000px;text-align: center;">
+		<h1>用户注册</h1>
+				<hr>
+			<div style="margin: 0 auto; height: 400px ; width: 400px;  text-align: center;  ">
+				<!-- /lostandfound/BaseServlet.java -->
+				<form action="/lostandfound/BaseServlet?method=adduser" method="post">
+					用户名:<input name="username" type="text" size="15px" style=" margin-top: 20px; width: 120px; height: 20px;"><br><br><br>
+					密&nbsp;&nbsp;码:<input name="password" type="password"  style="width: 120px; height: 20px;"> <br><br>
+					<button type="submit">注册</button>
+					<button type="reset">清除</button>
+				</form>
+			</div>
+		</div>
+</div>
+<!--foot-->
+<div style=" position:fixed ;bottom:0px; left:0px; height:80px; background-color:#dddddd; margin-top:5px;text-align:center; width:100%;"> 
+	<div style="height:20px;">| 免责声明 | 关于我们 | 网站合作 | 联系我们 |</div>
+	<div style="">2018 失物认领网  <br/>
+				失物认领网 版权所有<br/></div>
+</div>
+</body>
+</html>

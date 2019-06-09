@@ -1,0 +1,8 @@
+@charset "UTF-8";
+	.marquee{ width:1100px; margin:16px auto;height:140px;overflow: hidden; background-color:#eee;box-shadow: 10px 10px 5px #888888;}
+	.marquee div{ width:150px; height:120px; ;float:left;position:relative; margin-top:3px ;margin-right:10px;text-align: center;animation: marquee 15s linear infinite; color:#F00;}
+	@keyframes marquee
+	{
+	from {left:0px;}
+	to {left:1000px;}
+	}
